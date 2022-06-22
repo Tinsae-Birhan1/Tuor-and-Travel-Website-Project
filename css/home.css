@@ -58,6 +58,7 @@ body h1{
   max-width: 1550px;
 }
 
+
 .back-vid{
     position: absolute;
     right: 0;
@@ -69,15 +70,32 @@ body h1{
     height: 111%;
 }
 
-.cont{
-    text-align: center;
+
+@media (min-aspect-ratio: 16/9){
+  .back-vid{
+    width: 100%;
+    height: auto;
+  }
 }
 
+
+@media (max-aspect-ratio: 16/9){
+  .back-vid{
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+/* .cont{
+  text-align: center;
+} */
+
 .cont h1{
-    font-size: 100px;
-    color: #fff;
-    font-weight: 400;
-    text-align: center;
+  font-size: 100px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
 
 
 }

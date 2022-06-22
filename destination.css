@@ -61,20 +61,6 @@ section {
     animation: spin 4s linear infinite;
 }
 
-.bt input {
-    margin-top: 10px;
-    width: 50%;
-    height: 40px;
-    border-radius: 8px;
-    transition: 0.6s ease;
-    background-color: #000;
-    color: #eee;
-}
-
-.bt input:hover {
-    background-color: #FB4A0A;
-}
-
 .header .navbar a {
     font-size: 2rem;
     margin-left: 2rem;
@@ -282,46 +268,6 @@ section {
     cursor: pointer;
 }
 
-.booking .book-form {
-    padding: 2rm;
-    background: var(--light-bg);
-    /* width: 30; */
-}
-
-.booking .book-form .flex {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 2rem;
-}
-
-.booking .book-form .flex .inputbox {
-    flex: 1 1 41rem;
-}
-
-.booking .book-form .flex .inputbox input {
-    width: 100%;
-    padding: 1.2rem 1.4rem;
-    font-size: 1.6rem;
-    color: var(--light-black);
-    text-transform: none;
-    margin-top: 1.5rem;
-    border: var(--border);
-}
-
-.booking .book-form .flex .inputbox input:focus {
-    background: var(--back);
-    color: var(--white);
-}
-
-.booking .book-form .flex .inputbox input:focus::placeholder {
-    color: var(--light-white);
-}
-
-.booking .book-form .flex .inputbox span {
-    font-size: 2rem;
-    color: var(--light-black);
-}
-
 .packages {
     background: var(--light-bg);
 }
@@ -380,18 +326,6 @@ section {
     line-height: 2;
     padding: 1rem 0;
 }
-
-.packages h1 {
-    font-size: 300%;
-}
-
-
-/* .packages{
-    float: left;
-    width: 30%;
-    margin-left: -110px;
-    margin-top: -0px;
-} */
 
 .footer {
     background: url('footer-bg.jpg') no-repeat;
@@ -455,4 +389,12 @@ section {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+div.boxx {
+    float: left;
+    width: 33%;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    /* background-color: greenyellow; */
 }

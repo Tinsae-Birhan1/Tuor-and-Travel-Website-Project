@@ -61,20 +61,6 @@ section {
     animation: spin 4s linear infinite;
 }
 
-.bt input {
-    margin-top: 10px;
-    width: 50%;
-    height: 40px;
-    border-radius: 8px;
-    transition: 0.6s ease;
-    background-color: #000;
-    color: #eee;
-}
-
-.bt input:hover {
-    background-color: #FB4A0A;
-}
-
 .header .navbar a {
     font-size: 2rem;
     margin-left: 2rem;
@@ -282,44 +268,35 @@ section {
     cursor: pointer;
 }
 
-.booking .book-form {
-    padding: 2rm;
-    background: var(--light-bg);
-    /* width: 30; */
+.manage-user {
+    text-align: center;
 }
 
-.booking .book-form .flex {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 2rem;
+.manage-user .uman {
+    margin: 70rem;
+    margin: 0 auto;
 }
 
-.booking .book-form .flex .inputbox {
-    flex: 1 1 41rem;
+.manage-user .uman h3 {
+    font-size: 3rem;
+    color: var(--back);
 }
 
-.booking .book-form .flex .inputbox input {
-    width: 100%;
-    padding: 1.2rem 1.4rem;
-    font-size: 1.6rem;
+.manage-user .uman p {
+    font-size: 1.5rem;
     color: var(--light-black);
-    text-transform: none;
-    margin-top: 1.5rem;
-    border: var(--border);
+    line-height: 2;
+    padding: 1rem 0;
 }
 
-.booking .book-form .flex .inputbox input:focus {
+.btn {
+    display: inline-block;
     background: var(--back);
+    margin-top: 1rem;
     color: var(--white);
-}
-
-.booking .book-form .flex .inputbox input:focus::placeholder {
-    color: var(--light-white);
-}
-
-.booking .book-form .flex .inputbox span {
-    font-size: 2rem;
-    color: var(--light-black);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
 }
 
 .packages {
@@ -381,61 +358,71 @@ section {
     padding: 1rem 0;
 }
 
-.packages h1 {
-    font-size: 300%;
+.pack {
+    background: var(--light-black)
 }
 
-
-/* .packages{
-    float: left;
-    width: 30%;
-    margin-left: -110px;
-    margin-top: -0px;
-} */
-
-.footer {
-    background: url('footer-bg.jpg') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.footer,
-.box-container {
+.pack .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
 }
 
-.footer .box-container .box h3 {
-    color: var(--white);
-    font-size: 2.5rem;
-    padding-bottom: 2rem;
+.pack .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    display: none;
 }
 
-.footer .box-container .box a {
-    color: var(--light-white);
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-    display: block;
+.pack .box-container .box:nth-child(1),
+.pack .box-container .box:nth-child(2),
+.pack .box-container .box:nth-child(3),
+.pack .box-container .box:nth-child(4),
+.pack .box-container .box:nth-child(5),
+.pack .box-container .box:nth-child(6) {
+    display: inline-block;
 }
 
-.footer .box-container .box a i {
-    color: var(--main-color);
-    padding-right: .5rem;
+.pack .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+}
+
+.pack .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     transition: .2s linear;
 }
 
-.footer .box-container .box a:hover i {
-    padding-right: 2rem;
+.pack .box-container .box .content {
+    padding: 2rem;
 }
 
-.footer .credit {
+.pack .box-container .box .content {
+    padding: 2rem;
     text-align: center;
-    padding-top: 3rem;
-    margin-top: 3rem;
-    border-top: .1rem solid var(--light-white);
-    font-size: 2rem;
-    color: var(--white);
+}
+
+.pack .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--back);
+}
+
+.pack .box-container .box .content p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+div.boxx {
+    float: left;
+    width: 33%;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    /* background-color: greenyellow; */
 }
 
 @-moz-keyframes spin {

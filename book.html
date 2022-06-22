@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
+    <title>Book Now</title>
     <link rel="stylesheet" href="book.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -64,7 +64,7 @@
 
 
 
-    <div class="heading" style="background:url('header-bg-2.png') ;">
+    <div class="heading" style="background:url(header-bg-2.png) ;">
         <h1>Book Your Trip</h1>
     </div>
 
@@ -79,21 +79,13 @@
         <div class="box-container">
             <div class="box">
                 <div class="image">
-                    <img src="images/img-10.jpg" alt="">
+                    <img src="images/im-1.jpg" alt="">
                 </div>
 
                 <div class="content">
-                    <h3>Information </h3>
-                    <p>
-                        <b>Mobile : </b> +251 947301844 <br>
-                        <b>Tel: </b>+251 900631287 <br>
-                        <b>Tell</b> +251 977672380 <br>
-                        <b>Address :</b> Kirkos Subcity, Woreda 01, House No. 10/4 <br>
-                        <b>Email :</b> tinsaebirhan7@gmail.com <br>
-                        <b>P.O. Box :</b> 46714 <br>
-                        <b>Addis Ababa, Ethiopia</b>
-                    </p>
-                    <a href="#abc" class="btn">Give Us feedback</a>
+                    <h3>Advanture </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias earum est iusto quas aspernatur, commodi excepturi ullam quisquam ea ab tempore necessitatibus, ratione neque? Cum modi vel suscipit aliquid porro.</p>
+                    <a href="booking.html" class="btn">Book Now</a>
                 </div>
             </div>
         </div>
@@ -101,9 +93,9 @@
     </section>
 
 
-    <section class="booking" id="abc">
+    <section class="booking">
 
-        <form action="feedback.php" method="post" class="book-form" enctype="multipart/form-data">
+        <form action="book.php" method="post" class="book-form" enctype="multipart/form-data">
             <h1 class="heading-title">Book Now</h1>
             <div class="flex">
                 <div class="inputbox">
@@ -125,18 +117,29 @@
                 </div>
 
                 <div class="inputbox">
-                    <span>Feedback:</span>
-                    <input type="text" placeholder="your feedback" name="location" value="" required>
+                    <span>Where To:</span>
+                    <input type="text" placeholder="the place you wnat to visit" name="location" value="" onkeypress="return /[a-zA-Z]/i.test(event.key)" required>
 
                 </div>
 
 
+                <div class="inputbox">
+                    <span>Arrivals:</span>
+                    <input type="date" name="arraivals" required>
 
+                </div>
+
+                <div class="inputbox">
+                    <span>leaving:</span>
+                    <input type="text" name="leavings" required>
+
+                </div>
             </div>
 
             <input type="submit" value="submit" class="btn" name="submit">
         </form>
     </section>
+
 
 
 
@@ -190,13 +193,7 @@
 
 
 
-
-
-
-
-
     <script src="script.js"></script>
-
 
 </body>
 

@@ -1,17 +1,25 @@
 <?php
 
-$con = mysqli_connect('localhost:3307', 'root', '', 'travel');
+$connection=mysqli_connect("localhost","root","","travel");
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$feedback = $_POST['feedbk'];
+if(isset($_POST['submit'])){
+ 
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $phone=$_POST['phone'];
 
-$que="INSERT INTO `feedback` (`id`,`name`,`email`,`feedbk`) VALUES (0,'$name','$email','$feedback')";
+    $location=$_POST['location'];
 
-$result = mysqli_query($con, $que);
-
-if (isset($_POST['submit'])) {
-	header('location:feedback.html');
+    
+    $request = "INSERT into feedback_form(name, email, phone, location) values
+    ('$name','$email','$phone','$location')";
+   $result= mysqli_query($connection, $request);
+       if($result) {
+      echo"thank you for your feedback";
+        //header('location:feedback.html');
+     }
+     else{
+        echo die(mysqli_error($connection));
+     }
 }
-
 ?>
